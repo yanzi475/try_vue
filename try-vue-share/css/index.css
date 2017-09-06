@@ -1,0 +1,598 @@
+/*
+ * It is a DUMMY file what deployed in the DEV environment ONLY.
+ * DO NOT commit this file to the PRODUCT project.
+ */
+@charset "UTF-8";
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+    height: 100%;
+}
+html,
+body,
+div,
+span,
+iframe,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+address,
+em,
+strong,
+img,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+form,
+label,
+button,
+fieldset,
+legend,
+menu,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+i,
+b,
+s {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    -webkit-user-select: none;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    word-wrap: break-word;
+}
+button {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption,
+th {
+    text-align: left;
+}
+input,
+button,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    overflow: visible;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #d6dae4;
+}
+input[type=password] {
+    -webkit-text-security: disc;
+}
+/*公式*/
+/*多行文本溢出显示省略号*/
+/*图片自适应*/
+.imgauto {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hide {
+    display: none!important;
+}
+/* 主轴和侧轴方向居中对齐 */
+body {
+    color: #888f9b;
+    background-color: #F1E7DD;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/*页面主体*/
+.pb-25 {
+    padding-bottom: 0.33333333rem;
+}
+.cease-tui-piece .i-ico,
+.ico-pay {
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-size: 93px auto;
+}
+/*顶部banner*/
+.header-con {
+    width: 10rem;
+    height: 6.13333333rem;
+    margin: 0 auto;
+    background: url(../images/banner.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+/*主体内容*/
+.main-con {
+    position: relative;
+    top: -1.46666667rem;
+    padding: 0 0.66666667rem;
+}
+.tuition-piece {
+    margin-bottom: 0.93333333rem;
+    overflow: hidden;
+    background-color: #FFFCF9;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.tuition-piece .inner {
+    padding: 0.4rem 0.53333333rem 0.13333333rem;
+    text-align: center;
+}
+.tuition-piece .name {
+    font-size: 16px;
+    color: #445C95;
+    line-height: 24px;
+}
+.tuition-piece .num {
+    display: block;
+    margin: 0.16rem 0 0.2rem;
+    font-size: 30px;
+    color: #445C95;
+    line-height: 40px;
+    font-weight: normal;
+}
+.tuition-piece .tab-tui{
+    position: relative;
+}
+.tuition-piece .tab-tui.on .detail:after{
+    top: -3px;
+    border-color: transparent transparent #888f9b;
+}
+.tuition-piece .tab-tui.on .tui-list{
+    display: block;
+}
+.tuition-piece .detail {
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    font-size: 14px;
+    color: #445C95;
+    line-height: 21px;
+}
+.tuition-piece .detail:after {
+    content: "";
+    position: relative;
+    top: 1.5px;
+    left: 2.5px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border-width: 4.5px;
+    border-style: solid;
+    border-color: #888f9b transparent transparent;
+    overflow: hidden;
+}
+.tuition-piece .tui-list {
+    display: none;
+    padding-bottom: 0.26666667rem;
+}
+.tuition-piece .tui-list li {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 1.06666667rem;
+    font-size: 14px;
+    line-height: 1.06666667rem;
+}
+.tuition-piece .tui-list li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #F0EBE5;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+}
+.tuition-piece .tui-list .form-left {
+    color: #445C95;
+}
+.tuition-piece .tui-list .form-right {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    text-align: right;
+    color: #888F9B;
+    overflow: hidden;
+}
+.btn {
+    display: block;
+    height: 1.14666667rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 18px;
+    color: #F29360;
+    border: 1px solid #F29360;
+    -webkit-border-radius: 22px;
+    border-radius: 22px;
+}
+.btn.bg-btn {
+    margin-bottom: 0.4rem;
+    color: #fff;
+    background-color: #F29360;
+}
+.explain-txt-show {
+    font-size: 12px;
+    color: #888F9B;
+    line-height: 18px;
+}
+.explain-txt-show .txt{
+    text-align: justify;
+}
+.support-con {
+    padding-bottom: 0.4rem;
+    text-align: center;
+}
+.support-con .txt {
+    font-size: 12px;
+    text-align: center;
+    color: #888F9B;
+    line-height: 18px;
+}
+.support-con .ico-sup{
+    display: inline-block;
+    width: 79px;
+    height: 17px;
+    margin-left: 2px;
+    vertical-align: middle;
+    background-position: 0 0;
+}
+.support-con .ico-sup,
+.pop-dialog-share .ico-arrow{
+    background-image: url(../images/sup_share.png);
+    background-repeat: no-repeat;
+    background-size: auto 39px;
+}
+.pop-dialog-share .ico-arrow {
+    position: absolute;
+    top: 0.29333333rem;
+    right: 0.53333333rem;
+    width: 36px;
+    height: 39px;
+    background-position: -90px 0;
+}
+/*停止交学费*/
+.cease-tui-piece {
+    overflow: hidden;
+    background-color: #FFFCF9;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.cease-tui-piece .inner {
+    padding: 1.6rem 0.6rem 3.12rem;
+    text-align: center;
+}
+.cease-tui-piece .i-ico {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-position: -7px -196px;
+}
+.cease-tui-piece .txt {
+    margin-top: 0.26666667rem;
+    font-size: 14px;
+    color: #888F9B;
+    line-height: 18px;
+}
+.cease-tui-piece .title,
+.pay-piece .title {
+    margin-top: 0.4rem;
+    font-size: 18px;
+    color: #445C95;
+    line-height: 27px;
+}
+/*交费信息*/
+.paying-body {
+    background-color: #f7f7f7;
+}
+.paying-con .tuition-piece {
+    position: relative;
+    margin-bottom: 0.26666667rem;
+    background-color: #fff;
+    border-radius: inherit;
+}
+.paying-con .tuition-piece:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+}
+.paying-con .tuition-piece .inner {
+    padding: 0.4rem 0.66666667rem 0.13333333rem;
+}
+.paying-con .tuition-piece .num {
+    margin: 0.13333333rem 0;
+    font-size: 40px;
+    line-height: 50px;
+}
+/*确认交费按钮*/
+.fixed-paying-btn {
+    padding-top: 1.33333333rem;
+}
+.fixed-paying-btn .inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1.33333333rem;
+    line-height: 1.33333333rem;
+    text-align: center;
+    background-color: #F29360;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.fixed-paying-btn .inner .link {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+.fixed-paying-btn .inner .disable-l {
+    opacity: .3;
+}
+/*个人信息*/
+.information-piece .form-list {
+    position: relative;
+    margin-bottom: 0.26666667rem;
+    background-color: #fff;
+}
+.information-piece .form-list:before,
+.information-piece .form-list:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E5E5;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+}
+.information-piece .form-list:before {
+    top: 0;
+}
+.information-piece .form-list:after {
+    bottom: 0;
+}
+.information-piece .form-list li {
+    position: relative;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1.17333333rem;
+    margin-left: 0.66666667rem;
+    padding-right: 0.66666667rem;
+    line-height: 1.17333333rem;
+    font-size: 16px;
+}
+.information-piece .form-list li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    -webkit-transform: scale(1, 0.5);
+    transform: scale(1, 0.5);
+}
+.information-piece .form-list .form-left {
+    color: #445C95;
+}
+.information-piece .form-list .form-right {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 0;
+    text-align: right;
+    color: #888F9B;
+    overflow: hidden;
+}
+.information-piece .form-account .l-link {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-right: 0.33333333rem;
+}
+.information-piece .form-account .l-link:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-top: 1px solid #CDCDCE;
+    border-right: 1px solid #CDCDCE;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*协议*/
+.protocol-piece {
+    padding: 0 0 0.66666667rem 0.66666667rem;
+}
+.protocol-piece .txt {
+    font-size: 14px;
+    color: #888F9B;
+    line-height: 21px;
+}
+.protocol-piece .ico-agree {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    margin-right: 0.24rem;
+    background: url(../images/agree_bg.png) no-repeat;
+    background-size: 13px auto;
+    background-position: 0 1px;
+}
+.protocol-piece .agree-link{
+    position: relative;
+    padding: 10px;
+    margin: -10px;
+}
+.protocol-piece .agree-link:after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    z-index: 5;
+    cursor: pointer;
+}
+.protocol-piece .agree-link.on .ico-agree {
+    background-position: 0 -15px;
+}
+.protocol-piece .pro-link {
+    color: #46a2ec;
+}
+/*缴费信息*/
+.payment-body {
+    background-color: #fff;
+}
+.payment-con {
+    padding: 0 0.66666667rem;
+}
+.pay-piece {
+    height: 7.25333333rem;
+    padding-top: 1.56rem;
+    text-align: center;
+}
+.pay-piece .ico-pay {
+    display: inline-block;
+    width: 93px;
+    height: 93px;
+}
+.pay-piece .ico-pay.ico-suc {
+    background-position: 0 0;
+}
+.pay-piece .ico-pay.ico-fail {
+    background-position: 0 -98px;
+}
+.pay-piece .txt {
+    font-size: 14px;
+    color: #888F9B;
+    line-height: 21px;
+}
+/*广告图*/
+.payment-bt-banner {
+    position: absolute;
+    left: 0.66666667rem;
+    right: 0.66666667rem;
+    bottom: 0.66666667rem;
+}
+.payment-bt-banner .pic {
+    display: block;
+}
+.payment-bt-banner img {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+/*弹窗*/
+.pop-wzbank-wrap{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.pop-mask-con {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.pop-dialog-share .inner {
+    position: relative;
+    padding: 3.28rem 0.66666667rem 0;
+    text-align: center;
+}
+.pop-dialog-share .txt {
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+}
+
+/*响应式*/

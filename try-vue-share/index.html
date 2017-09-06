@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8" />
+    <title>微众交学费</title>
+    <meta name="description" itemprop="description" content="yz_mgm" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/flexible.js"></script>
+</head>
+<body>
+
+<!-- [[页面主体 -->
+<div id="app">
+
+<article class="wzbank-wrap" >
+
+    <!-- 顶部banner -->
+    <section class="header-con">
+        <h1 class="logo hide">开通微众银行账户<br>轻松线上交学费</h1>
+    </section>
+
+    <!-- 主体内容 -->
+    <section class="main-con">
+        <div class="tuition-piece">
+            <div class="inner">
+                <p class="name">刘轶娜的学费</p>
+                <strong class="num">&yen; 28,165.00</strong>
+                <!-- 点击明细后再类tab-tui的基础上再加个类 on； -->
+                <div class="tab-tui " :class="{'on': down}">
+                    <a class="detail"  @click="clickDisplay()" >学费明细</a>
+                    <ul class="tui-list " :class="{'hide': display }" >
+                        <li v-for="item in detail">
+                            <p class="form-left"> {{item.text}} </p>
+                            <p class="form-right">{{item.amount}}</p>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 父母且自己开户交学费 -->
+        <div class="con-btn-show pb-25">
+            <a class="btn bg-btn" @click="clickShare()" >请父母开户交学费</a>
+            <a class="btn" href="javascrip:;">自己开户交学费</a>
+        </div>
+        <!-- 开户帮子女交学费 -->
+        <div class="con-btn-show hide">
+            <a class="btn bg-btn" href="javascrip:;">开户帮子女交学费</a>
+        </div>
+
+        <div class="explain-txt-show">
+            <p class="txt">1、开户前请先准备一张开户人持有的第三方银行卡并确保余额充足。</p>
+            <p class="txt">2、线上交费时间为2017年7月20日至2017年9月1日，9月2日起请到学校进行线下交费。</p>
+        </div>
+    </section>
+
+    <section class="support-con">
+        <div class="inner">
+            <p class="txt">联合缴费合作支持：<i class="ico-sup"></i></p>
+        </div>
+    </section>
+
+</article>
+<!-- 页面主体]] -->
+
+
+<!-- 分享弹窗 -->
+<!-- 当出现弹窗时在页面主体类wzbank-wrap的基础上再加上类 pop-wzbank-wrap  -->
+<div class="pop-mask-con" :class="{'hide': share }" @click="clickMask()" >
+    <div class="pop-dialog-share">
+        <div class="inner">
+            <i class="ico-arrow"></i>
+            <p class="txt">点击右上角按钮分享本页面给父母，需要父母登录自己的 QQ 或微信才能开户交费。</p>
+        </div>
+    </div>
+</div>
+<!-- 弹窗]]-->
+
+</div>
+<script src="app.bundle.js"></script>
+<script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+</body>
+
+
+</html>
