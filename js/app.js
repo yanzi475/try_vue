@@ -3,7 +3,7 @@ import { utils } from './utils'
 import { report } from './report'
 import { constants } from './constatns'
 import { share } from './share'
-import { PageSlider } from './pager_slider'
+
 
 // 年利率
 var annualRate = 0.04875,
@@ -215,12 +215,7 @@ window.vm = new Vue({
     }
 });
 
-// App 下载地址
-// var APP_DOWNLOAD_PAGE_URL = 'https://www.webank.com/app/common/bridge-download/index.html';
-// 统计页（接受参数 activity_id, channel_id, jump_url 三个参数, jump_url不能带参数，如果带参数先转换成短链接）
-var STATISTIC_PAGE_URL = 'https://personal.webank.com/s/hj/op/pre-reg/index.html';
-    // 存本取息产品详情页
-var PRINCIPAL_DEPOSIT_DETAIL_URL = 'https://www.webankcdn.net/s/hj/weixinmp/index.html?op=principalDetail';
+
 
 // 微信公众号存本取息详情页地址（带参）
 var principalDetailUrl = utils.addQueryParams(PRINCIPAL_DEPOSIT_DETAIL_URL,
@@ -232,13 +227,10 @@ var principalDetailUrl = utils.addQueryParams(PRINCIPAL_DEPOSIT_DETAIL_URL,
     'ADTAG', utils.getADTAG()
 );
 
-/**
- * 跳转到存本取息页
- * 通过 URL 查询参数尝试唤起 App 的存本取息详情页，唤起失败则跳转到存本取息公众号购买页
- */
+
 window.onClickGo = function () {
     // 唤起 App 的 URL SCHEMA 地址
-    var APP_URL_SCHEMA = 'webank://?subType=1&moduleType=2&jumpParam=eyJhbmRyaWRNaW5WZXIiOiIyMjgwIiwiaW9zTWluVmVyIjoiMzQwIiwiYWN0aW9uX3BhcmFtIjoiMTEyMDE0MDEtMSJ9';
+    var APP_URL_SCHEMA = 'baidu://?subType=1&moduleType=2&jumpParam=eyJhbmRyaWRNaW5WZXIiOiIyMjgwIiwiaW9zTWluVmVyIjoiMzQwIiwiYWN0aW9uX3BhcmFtIjoiMTEyMDE0MDEtMSJ9';
 
     // 上报点击
     report.clickStat('share_ck_cbqx_click_go_btn');
