@@ -6,8 +6,6 @@
   "license": "MIT",
   "scripts": {
     "clear": "rm *.bundle.js *.bundle.js.map *.tar.gz || exit 0",
-    "pkg": "tar -czf share-deposit.tar.gz app.bundle.js index.html img css || rm share-deposit.tar.gz",
-    "upload": "scp share-deposit.tar.gz hjserver:/data/sit-hjdata.webank.com/tc-k/querydata/html/sharePage/share-deposit",
     "build:dev": "npm run clear; webpack --env=dev; npm run pkg",
     "build:prod": "npm run clear; webpack --env=prod; npm run pkg",
     "start": "webpack-dev-server --open --env=dev --port 8090"
