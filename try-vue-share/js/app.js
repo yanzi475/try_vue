@@ -2,7 +2,7 @@ import Vue from 'vue/dist/vue.min'
 import { utils } from './utils'
 import { share } from './share'
 
-var STATISTIC_PAGE_URL = 'http://www.google.com/';
+var STATISTIC_PAGE_URL = 'https://www.google.com.hk/';
 
 // 初始化分享
 var shareUrl = utils.addQueryParams(STATISTIC_PAGE_URL,
@@ -15,14 +15,14 @@ var shareUrl = utils.addQueryParams(STATISTIC_PAGE_URL,
 // 环境的判断
 var ENV = {
     SIT: {
-        URL : "https:google.com",
-        IMAGE_URL:"https:google.com",
+        URL : "https://www.google.com.hk/",
+        IMAGE_URL:" ",
         WX_APPID: '',
         QQ_APPID: ''
     },
     PROD: {
-        URL: "https:google.com",
-        IMAGE_URL:"https:google.com",
+        URL: "https://www.google.com.hk/",
+        IMAGE_URL:" ",
         WX_APPID: '',
         QQ_APPID: ''
     }
