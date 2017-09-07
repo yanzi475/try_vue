@@ -1,4 +1,4 @@
-import {utils} from './utils'
+
 
 var report = {
     clickStat: function (eventId) {
