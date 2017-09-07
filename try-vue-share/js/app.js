@@ -2,7 +2,7 @@ import Vue from 'vue/dist/vue.min'
 import { utils } from './utils'
 import { share } from './share'
 
-var STATISTIC_PAGE_URL = 'http://www.webank.com/';
+var STATISTIC_PAGE_URL = 'http://www.google.com/';
 
 // 初始化分享
 var shareUrl = utils.addQueryParams(STATISTIC_PAGE_URL,
@@ -15,16 +15,16 @@ var shareUrl = utils.addQueryParams(STATISTIC_PAGE_URL,
 // 环境的判断
 var ENV = {
     SIT: {
-        URL : "https://test-personal.webank.com/s/hj/",
-        IMAGE_URL:"https://test-personal.webank.com/s/hj/weixinmp/img/share_school.png",
-        WX_APPID: 'wxdc3dce3bdd8339a5',
-        QQ_APPID: '101219330'
+        URL : "https:google.com",
+        IMAGE_URL:"https:google.com",
+        WX_APPID: '',
+        QQ_APPID: ''
     },
     PROD: {
-        URL: "https://personal.webank.com/s/hj/" ,
-        IMAGE_URL:"https://www.webankcdn.net/s/hj/weixinmp/img/share_school.png",
-        WX_APPID: 'wx90bfe8ac7aa1338a',
-        QQ_APPID: '101219330'
+        URL: "https:google.com",
+        IMAGE_URL:"https:google.com",
+        WX_APPID: '',
+        QQ_APPID: ''
     }
 };
 
@@ -102,10 +102,10 @@ window.vm = new Vue({
 
                 var param = {
                     "share_type": 0,
-                    "image_url": 'https://www.webankcdn.net/s/hj/weixinmp/img/share_school.png',
+                    "image_url": '',
                     "share_url": STATISTIC_PAGE_URL,
-                    "desc": "先完成缴费，可以提前选宿舍哦！",
-                    "title": "武汉学院线上缴学费"
+                    "desc": "",
+                    "title": ""
                 };
 
                 // mqq.data.setShareInfo(param);
@@ -125,9 +125,9 @@ window.vm = new Vue({
 
             share.init({
                 url: shareUrl,
-                title: '微众银行',
-                content: '微众银行-try-vue',
-                iconUrl: utils.isDevEnv() ? 'https://sit-hjdata.webank.com/tc-k/common/share-deposit/img/head.png' : 'https://hjdata.webank.com/querydata/html/sharePage/share-deposit/img/head.png'
+                title: 'try-vue',
+                content: 'try-vue',
+                iconUrl: utils.isDevEnv() ? 'test2.png' : 'test1.png'
             });
 
         }
