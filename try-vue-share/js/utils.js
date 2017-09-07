@@ -71,10 +71,7 @@ var utils = {
             return "";
         }
     },
-    // 启动 App 的 URL 地址
-    // getAppUrl: function () {
-    //     return 'webank://?action=openRecom&param1=' + this.getChannel();
-    // },
+ 
     // 尝试在android下打开app
     tryOpenApp: function (appUrlSchema) {
         var ifr = document.createElement('iframe');
