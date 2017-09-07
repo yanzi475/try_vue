@@ -59,8 +59,6 @@ window.vm = new Vue({
 });
 
 
-
-// 微信公众号存本取息详情页地址（带参）
 var principalDetailUrl = utils.addQueryParams(PRINCIPAL_DEPOSIT_DETAIL_URL,
     // 活动号
     'activity_id', utils.getActivityId(),
