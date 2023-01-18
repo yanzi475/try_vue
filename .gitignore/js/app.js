@@ -278,7 +278,6 @@ var shareUrl = utils.addQueryParams(STATISTIC_PAGE_URL,
 share.init({
     url: shareUrl,
     title: '我想存下一笔钱，每月还能收获小确幸',
-    content: '微众银行存本取息存款，年利率4.875%，一次存入，月月取息',
     iconUrl: utils.isDevEnv() ? 'https://sit-hjdata.webank.com/tc-k/common/share-deposit/img/head.png' : 'https://hjdata.webank.com/querydata/html/sharePage/share-deposit/img/head.png'
 });
 
